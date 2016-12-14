@@ -7,7 +7,7 @@
 	<meta property="og:type"          content="website" />
 	<meta property="og:title"         content="{{ page.title }}" />
 	<meta property="og:description"   content="{{ page.description }}" />
-	<meta property="og:image"         content="{{ page.image }}" />
+	<meta property="og:image"         content="{{ '/assets/img/{{ page.image }}' | prepend: site.baseurl }}" />
     <title>{{ page.title }}</title>
 
     <!-- Favicon -->
