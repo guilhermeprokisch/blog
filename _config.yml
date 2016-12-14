@@ -3,8 +3,8 @@ description: Code, Ideas and Histories Drafts
 
 url: "http://prokis.ch"
 baseurl: ""
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+paginate_path: "/page:num/"
+permalink: /:title/
 
 markdown: redcarpet
 highlighter: pygments
