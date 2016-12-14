@@ -1,15 +1,15 @@
+<!-- Posicione esta tag no cabeçalho ou imediatamente antes da tag de fechamento do corpo. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 ---
 layout: default
 ---
 
 
-<!-- Posicione esta tag no cabeçalho ou imediatamente antes da tag de fechamento do corpo. -->
-<script src="https://apis.google.com/js/platform.js" async defer>
-  {lang: 'pt-BR'}
-</script>
 
-<!-- Posicione esta tag onde você deseja que o botão compartilhar apareça. -->
-<div class="g-plus" data-action="share" data-annotation="none" data-height="15"></div>
+
+
+
 
 <div class="post">
   {% if page.image %}
@@ -20,7 +20,8 @@ layout: default
   <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
   <p class="meta"> <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  {{ content }} </p> <div class="g-plus" data-action="share" data-annotation="none" data-height="15"></div> 
+  {{ content }}</p>
+  <div class="g-plus" data-action="share" data-annotation="none"></div>
   
   
   <!-- POST NAVIGATION -->
