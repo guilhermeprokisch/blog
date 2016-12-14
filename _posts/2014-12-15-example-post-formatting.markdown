@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Example Post Formatting"
-date:   2014-12-15
+title: Example Post Formatting
+date: {}
+published: true
 ---
 
 <p class="intro"><span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -12,6 +13,13 @@ date:   2014-12-15
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
+
+-1 Teste
+-2 Teste
+
+![]({{site.baseurl}}/https://imagem.biz/wp-content/uploads/2015/05/bola-.png)![7.jpg]({{site.baseurl}}/_posts/7.jpg)
+
+
 
 <blockquote>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</blockquote>
 
