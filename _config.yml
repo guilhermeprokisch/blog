@@ -27,4 +27,5 @@ social:
 
 google_analytics: "UA-58263416-1"
 
-gems: - jekyll-sitemap
+gems: 
+     - jekyll-sitemap
