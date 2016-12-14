@@ -4,6 +4,15 @@ layout: default
 
 <!-- Posicione esta tag no cabeçalho ou imediatamente antes da tag de fechamento do corpo. -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
@@ -20,7 +29,10 @@ layout: default
   </p>
   <!-- Posicione esta tag onde você deseja que o botão compartilhar apareça. -->
   <div class="g-plus" data-action="share" data-annotation="none"></div>
-
+	<div class="fb-share-button" 
+		data-href="http://www.your-domain.com/your-page.html" 
+		data-layout="button_count">
+	</div>
   
   {{ content }}
   
