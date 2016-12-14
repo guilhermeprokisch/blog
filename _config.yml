@@ -1,7 +1,7 @@
 title: Guilherme Blog
-description: Teste
+description: Code, Ideas and Histories Drafts
 
-url: http://prokis.ch
+url: https://guilhermeprokisch.github.io/long-haul/
 baseurl: "/blog"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
