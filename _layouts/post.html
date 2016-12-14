@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<!-- Posicione esta tag no cabeçalho ou imediatamente antes da tag de fechamento do corpo. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <div class="post">
   {% if page.image %}
@@ -10,7 +12,11 @@ layout: default
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-   
+  <p class="meta"> <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  {{ content }}</p>
+  <div class="g-plus" data-action="share" data-annotation="none"></div>
+  
+  
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
     {% if page.previous.url %} 
@@ -32,7 +38,6 @@ layout: default
 
 <div id="disqus_thread"></div>
 <script>
-
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -50,4 +55,3 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
