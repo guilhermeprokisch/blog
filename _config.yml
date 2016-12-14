@@ -1,8 +1,8 @@
 title: Guilherme Blog
 description: Code, Ideas and Histories Drafts
 
-url: https://guilhermeprokisch.github.io/long-haul/
-baseurl: "/long-haul/"
+url: https://guilhermeprokisch.github.io/blog/
+baseurl: "/blog/"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
