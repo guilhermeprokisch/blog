@@ -11,21 +11,10 @@ layout: default
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-  
-<!--the Twitter base 
-    https://twitter.com/share --> 
-
-<a href="https://twitter.com/share?
-    text={{ page.title }}
-    &url={{ page.shorturl }}
-    &via=tomhohenstein">
-
-    <!-- use the twitter logo for the link --> 
-    <img alt="..." 
-        class="footer-icon" 
-        src="{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png">
-
-</a>
+  <p class = "meta">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+  </p>
 
   
   {{ content }}
