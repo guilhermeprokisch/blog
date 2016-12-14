@@ -17,7 +17,8 @@ published: true
 -1 Teste
 -2 Teste
 
-![]({{site.baseurl}}/https://imagem.biz/wp-content/uploads/2015/05/bola-.png)![7.jpg]({{site.baseurl}}/_posts/7.jpg)
+![7.jpg]({{site.baseurl}}/_posts/7.jpg)
+
 
 
 
