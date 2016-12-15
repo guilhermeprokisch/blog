@@ -1,12 +1,21 @@
 ---
 layout: post
-title: Test Post
-date: 2016-12-10T00:00:00.000Z
+title: Discovering Brothels Expenses In the Deputies Quota
+date: {}
 published: true
 image: touring.jpg
 ---
 
-<p class="intro"><span class="dropcap">L</span>orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.</p>
+<p class="intro"><span class="dropcap">T</span>he misappropriation of public money in brazil is a serious problem and widely practice. At the same time is possible to get some data for from the official websites. Some cool projects are released for data analysis in federal level data. The [Serenata de Amor](https://serenata.datasciencebr.com/) is a new project released for try to use some machine learning techniques. 
+The [OPS](http://ops.net.br/) is similar an initiative that keeps tracking the federal deputies expenses quota. 
+
+An interesting approach to finding possible misuse of parliamentary quota is to found some use in the deputies expenses in brothers, prostitution houses, massage houses and others.
+
+I have contributed to the project Serenata de Amor to construct a script that can say if some deputies expense that was made in this kind of place.
+
+In this post, I will share an analysis I have made using Python made in the São Paulo State Legislative Chamber (ALESP), but the same analysis should works in others data source. 
+
+</p>
 
 Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.
 
