@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example Post Formatting
-date: {}
+date: '3012-08-23 09:14:00 +1000'
 published: false
 ---
 
