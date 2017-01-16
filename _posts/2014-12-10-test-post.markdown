@@ -6,6 +6,8 @@ published: true
 image: touring.jpg
 ---
 
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FBogotaStreetPhoto%2Fvideos%2F1415223251835327%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
 <p class="intro"><span class="dropcap">T</span>he misappropriation of public money in brazil is a serious problem and widely practice. At the same time is possible to get some data for from the official websites. Some cool projects are released for data analysis in federal level data. The [Serenata de Amor](https://serenata.datasciencebr.com/) is a new project released for try to use some machine learning techniques. 
 The [OPS](http://ops.net.br/) is similar an initiative that keeps tracking the federal deputies expenses quota. 
 
