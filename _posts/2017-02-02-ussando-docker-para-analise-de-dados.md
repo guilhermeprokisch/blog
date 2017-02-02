@@ -6,7 +6,7 @@ image: touring.jpg
 
 _Adaptação do post: [How to get started with data science in containers](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/)_
 
-<p class="intro"><span class="dropcap">Se</span> trabalha com análise de dados e acompanha sites de tecnologia já deve ter ouvido ao menos falar no Docker. Ou com certeza já usou algum site que roda R ou Python, ou outra linguagem, direto do navegador (Kaggle, Data Academy, Data Quest, Hacker Rank, Coursera, entre outros) todos eles usam Docker por trás. 
+<p class="intro"><span class="dropcap">S</span>e você trabalha com análise de dados e acompanha sites de tecnologia já deve ter ouvido ao menos falar no Docker. Ou com certeza já usou algum site que roda R ou Python, ou outra linguagem, direto do navegador (Kaggle, Data Academy, Data Quest, Hacker Rank, Coursera, entre outros) todos eles usam Docker por trás. 
 
 Se você não sabe direito o que é Docker, nunca ouviu falar ou nem nem pra que serve, aqui vai uma introdução.
 
