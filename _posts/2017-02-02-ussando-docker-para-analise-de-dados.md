@@ -10,7 +10,7 @@ Se trabalha com análise de dados e acompanha sites de tecnologia já deve ter o
 
 Docker Containers resolvem um monte de problemas ao mesmo tempo: Eles fazem muito fácil a intalação de bibliotecas complicadas; Eles fazem sua análise reprodutível - extremamente importante para  a **ciência** de dados; Eles fazem sua análise ficar bem fácil para compartilhamento; Eles te dão uma economia enorme na preparação do ambiente de análise, epecialmente para quem usa Python em ciência de dados.
 
-## O que são Containers?
+### O que são Containers?
 
 Containers são como máquinas virtuais ultraleves. Se você já usou o Virtual Box sabe que restaurar uma VM de um snapshot pode demorar alguns minutos, mas em Docker Containers essa restauração é praticamente instatanea. Então você pode colocar dentro do Container tudo que seu projeto necessita para rodar. Você pode especificar os mínimos detalhes: Desde a versão espécifica do sistema operacional, a versão da sua linguagem de programação até versão das bibliotecas e de suas dependências. Tudo isso em um único arquivo que roda em milesegundos e está isolado do seu sistema principal. Toda vez que você restaurar o container, sua execução é idêntica dando a você reprodutibilidade. Containers também vão rodar identicamete em qualquer S.O que tenha Docker: OS X, Windows e Linux, então colaboração entre colaboração se torna muito mais fácil.
 
@@ -20,7 +20,7 @@ Não! Você está enganado! E isso é o mais impressionante de containers.
 
 Containers não são VM e seu desempenho comparado a sua máquina de "verdade" é quase imperceptível. Isso por que containers rodam a nível de Kernel e acessam os os recursos de sua máquina de uma maneira diferente de máquinas virtuais. O  foco nesse post será como usar o Docker para Análise de Dados. O final postarei alguns links para mais detalhes. Agora mãos a massa!
 
-## Mas por que usar containers?
+### Mas por que usar containers?
 
 Pessoalmente, Eu acho que containers e eliminam uma dor de cabeça que ocorre algumas vezes em usar Python para análise de dados. Python e R são duas grandes linguagens para estatística, e cada uma tem seus prós e contras. Mas uma grande diferença entre elas é como elas trabalham com bibliotecas e pacotes. O install.packages() do R funciona relativamente bem, é raro acontecer conflitos entre pacotes. Se você tenta rodar um script que usa uma biblioteca que não está instalada no seu sistema, com alguns cliques você pode instalar ela pelo CRAN. 
 
@@ -32,7 +32,7 @@ Tudos essas problemas podem claro, ser resolvidos. O Python tem um comunidade mu
 
 Mas se você usa Python em um container tudo isso desaparece. Você so tem que investir tempo configurando o seu container uma vez. Na verdade, se você usar uma imagem de container como a do Kaggle, você não tem que se procupar em configurar quase nada para sua análise de dados tudo já vira pronto pra usar. Eles tem imagens extremamente incríveis que contém quase todos os pacotes necessários para análise de dados, machine learning, deep learning e etc. Você pode  conferir os pacotes que vem dentro da imagens aqui. ([Python](https://github.com/Kaggle/docker-python/blob/master/Dockerfile), [R](https://github.com/Kaggle/docker-rcran), [Julia](https://github.com/Kaggle/docker-julia))
 
-
+##
 
 
 
