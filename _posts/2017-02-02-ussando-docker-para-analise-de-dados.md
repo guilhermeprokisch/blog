@@ -4,7 +4,7 @@ title: Usando Containers para Análise de Dados
 image: touring.jpg
 ---
 
-_Adaptação do post:[__How to get started with data science in containers_](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/)
+_Adaptação do post:[How to get started with data science in containers](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/)_
 
 Se trabalha com análise de dados e acompanha sites de tecnologia já deve ter ouvido ao menos falar no Docker. Se você não sabe direito, nunca ouviu falar ou nem nem pra que serve, continue lendo.
 
