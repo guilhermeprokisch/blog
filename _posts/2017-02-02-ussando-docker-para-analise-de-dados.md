@@ -58,14 +58,14 @@ $ eval $(docker-machine env docker2)
 
 Se mais tarde, quando você abrir outra janela do terminal e o Docker avisar exibir uma mensagem como "Cannot connect to the Docker daemon. Is the docker daemon running on this host?". Você precisará inicar a VM novamente rodando as duas linhas acima.
 
-## A Mágica
+## Mágica
 
-Para um pouco de divertimento rode agora:
+Para um pouco de divertimento rode:
 {% highlight sh %}
-$ docker run -it kaggle/python python
+$ docker run -it -rm kaggle/python python
 {% endhighlight %}
 
-Como você não tem a imagem "kaggle/python" no seu computador a primeira vez que rodar o esse comando o Docker irá baixar os arquivos necessários.
+Como você não tem a imagem "kaggle/python" no seu computador a primeira vez que rodar o esse comando o Docker irá baixar a imagem necessária.
 
 Depois de terminar você provalmente estará dentro de um terminal do Python com todas as bibliotecas mais importantes para análise de dados.
 
@@ -78,25 +78,9 @@ import keras
 import sklearn as sk
 {% endhighlight %}
 
-## Entendendo o que aconteceu Docker.
+## Entendendo o que aconteceu.
 
-Uma vez instalado o Docker. Você precisa entender alguns conceitos e comandos básicos para usa-lo. Existem muitos tutoriais na internet sobre Docker que explicam em detalhes. Você pode começar dando uma olhada no canal do Rafael Gomes que vez um ótimo [video](https://www.youtube.com/watch?v=0-AK020S1ak) introdutório.
-
-Mas básicamente lembre que para rodar um container você precisa de uma imagem. Uma imagem você pode ou cria-la do zero a partir de uma arquivo de texto chamado Docker File ou pela-la pronta do DockerHub. (No caso desse tutorial vamos usar a imagem oficial do Kaggle para o Python)
-
-Vamos pegar a imagem oficial do Kaggle chamada "kaggle/python" do DockerHub para isso rode.
-
-{% highlight sh %}
-$ docker pull kaggle/python
-{% endhighlight %}
-
-Esse comando baixa e instala (build) a imagem no seu Docker.
-
-Por exemplo, se você quiser baixar também a imagem do R, "kaggle/rstats" rode.
-
-{% highlight sh %}
-$ docker pull kaggle/rstats
-{% endhighlight %}
+Lembre que para rodar um container você precisa de uma imagem. Uma imagem você pode ou cria-la do zero a partir de uma arquivo de texto chamado Docker File ou pela-la pronta do DockerHub. (No caso desse tutorial estamos usando a imagem oficial do Kaggle para o Python)
 
 Para listar as imagens instaladas no seu Docker rode:
 
@@ -104,11 +88,23 @@ Para listar as imagens instaladas no seu Docker rode:
 $ docker images
 {% endhighlight %}
 
-## Rodando o Container.
+Note que você deve ter a imagem "kaggle/python", ela foi baixada automaticamente quando você rodou o comando "docker run -it kaggle/python python" pela primeira vez e o Docker não a  encontrou localmente.
+
+Você também pode pegar imagens com o comando "docker pull". Por exemplo, se você pode baixar também a imagem do R, "kaggle/rstats". 
+
+_Se quiser rode:_
+
+{% highlight sh %}
+$ docker pull kaggle/rstats
+{% endhighlight %}
+
+Nesse caso não estamos nenhum container, só estamos baixando a imagem.
+
+## O Docker run.
 
 Depois de ter a imagem você pode rodar quantos containers quiser com base nela. 
 
-Talvez essa parte essa a mais importante e complexa do Docker. O comando "docker run NOME_DA_IMAGEM" inicia de fato um container. O fato é que existem muitos parametros que podem ser agregados ao "docker run" e eles dependem de entender alguns conceitos do Docker.
+Talvez essa parte essa a mais importante e complexa do Docker. O comando "docker run NOME_DA_IMAGEM" inicia de fato um container. O fato é que existem muitos [parametros](https://docs.docker.com/reference/run/) que podem ser agregados ao "docker run" e eles dependem de entender alguns conceitos do Docker.
 
 Alguns para lembrar são.
 
@@ -119,15 +115,26 @@ Alguns para lembrar são.
 
 O comando -v existe por que um container _não armazena dados_. Ele é uma _"máquina virtual"_ que toda vez que iniciado volta ao estado inicial como descrito na imagem.
 
-Finalmente rode:
+
+Agora você já pode rodar tudo que quiser dentro dos containers. Aqui uma etapa extra que vai fazer ainda seu trabalho ficar fácil. Coloque essas linhas no seu .bashrc (ou no[equivalente do Windows)](https://superuser.com/questions/144347/is-there-windows-equivalent-of-the-bashrc-file-in-linux)
 
 {% highlight sh %}
-$ docker run -it kaggle/python
+kpython(){
+  docker run -v $PWD:/tmp/working -w=/tmp/working --rm -it kaggle/python python "$@"
+}
+ikpython() {
+  docker run -v $PWD:/tmp/working -w=/tmp/working --rm -it kaggle/python ipython
+}
+kjupyter() {
+  (sleep 3 && open "http://$(docker-machine ip docker2):8888")&
+  docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -it kaggle/python jupyter notebook --no-browser --ip="\*" --notebook-dir=/tmp/working
+}
 {% endhighlight %}
 
 
-
 ----------------------------------
+Existem muitos tutoriais na internet sobre Docker que explicam em detalhes. Você pode começar dando uma olhada no canal do Rafael Gomes que vez um ótimo [video](https://www.youtube.com/watch?v=0-AK020S1ak) introdutório.
+
 É verdade que existe uma curva de aprendizado do Docker um pouco lenta. Pode demorar uns dias até você notar a importância. Principalmente se você for mais para a área de análise de dados mais do que desenvolvendor ou programador. 
 
 Segue um aula de introdução ao básico do Docker:
