@@ -42,7 +42,7 @@ Um ponte importante para entender é que, a tecnologia do Docker é nativa de um
 
 A máquina virtual padrão no Windows e do OSX é um pouco pequena e pode ser problematica para algumas tarefas de análise de dados. 
 
-{% highlight shell %}
+{% highlight sh %}
 $ docker-machine create -d virtualbox --virtualbox-disk-size "50000" --virtualbox-cpu-count "4" --virtualbox-memory "8092" docker2
 {% endhighlight %}
 
