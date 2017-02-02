@@ -67,7 +67,9 @@ $ docker run -it kaggle/python python
 
 Como você não tem a imagem "kaggle/python" no seu computador a primeira vez que rodar o esse comando o Docker irá baixar os arquivos necessários.
 
-Depois de terminar você provalmente estará dentro de um terminal do Python com todas as bibliotecas mais importantes .
+Depois de terminar você provalmente estará dentro de um terminal do Python com todas as bibliotecas mais importantes para análise de dados.
+
+Tente por exemplo importar essas bibliotecas.
 
 {% highlight python %}
 import tensorflow
@@ -76,7 +78,7 @@ import keras
 import sklearn as sk
 {% endhighlight %}
 
-## O Mínimo de Docker.
+## Entendendo o que aconteceu Docker.
 
 Uma vez instalado o Docker. Você precisa entender alguns conceitos e comandos básicos para usa-lo. Existem muitos tutoriais na internet sobre Docker que explicam em detalhes. Você pode começar dando uma olhada no canal do Rafael Gomes que vez um ótimo [video](https://www.youtube.com/watch?v=0-AK020S1ak) introdutório.
 
