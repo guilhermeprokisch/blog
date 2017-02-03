@@ -61,7 +61,7 @@ Se mais tarde, quando você abrir outra janela do terminal e o Docker avisar exi
 
 ## Rodando o Primeiro Container.
 
-Para um pouco de divertimento rode:
+Rode:
 {% highlight sh %}
 $ docker run -it kaggle/python python
 {% endhighlight %}
