@@ -107,7 +107,7 @@ Depois de ter a imagem você pode rodar quantos containers quiser com base nela.
 
 Talvez essa parte essa a mais importante e complexa do Docker. O comando "docker run NOME_DA_IMAGEM" inicia de fato um container. O fato é que existem muitos [parametros](https://docs.docker.com/reference/run/) que podem ser agregados ao "docker run" e eles dependem de entender alguns conceitos do Docker.
 
-Alguns para lembrar são.
+Alguns para lembrar são:
 
 - v : (Volume). Conecta algum caminho da sua máquina local com uma pasta dentro do container. E então tudo que é escrito na pasta dentro do container será copiado para a pasta local e não será apagada depois do container ser removido.
 
