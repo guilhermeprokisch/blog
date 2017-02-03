@@ -122,7 +122,7 @@ Alguns para lembrar são:
 O comando -v existe por que um container _não armazena dados_. Ele é uma _"máquina virtual"_ que toda vez que iniciado volta ao estado inicial como descrito na imagem.
 
 
-Agora você já pode rodar tudo que quiser dentro dos containers. Aqui uma etapa extra que vai fazer ainda seu trabalho ficar fácil. Coloque essas linhas no seu .bashrc (ou no[equivalente do Windows)](https://superuser.com/questions/144347/is-there-windows-equivalent-of-the-bashrc-file-in-linux)
+Agora você já pode rodar tudo que quiser dentro dos containers. Aqui uma etapa extra que vai fazer ainda seu trabalho ficar fácil. Coloque essas linhas no seu .bashrc (ou no [equivalente do Windows)](https://superuser.com/questions/144347/is-there-windows-equivalent-of-the-bashrc-file-in-linux)
 
 {% highlight sh %}
 kpython(){
