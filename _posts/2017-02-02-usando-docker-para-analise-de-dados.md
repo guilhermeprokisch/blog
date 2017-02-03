@@ -41,8 +41,9 @@ Um ponte importante para entender é que, a tecnologia do Docker é nativa de um
 A máquina virtual padrão no Windows e do OSX é um pouco pequena e pode ser problematica para algumas tarefas de análise de dados. 
 
 Vamos criar uma outra máquina com mais recursos chamada docker2:
-_Se você usa Linux, pode ignorar esse passo._
 
+
+_Se você usa Linux, pode ignorar esse passo._
 {% highlight sh %}
 $ docker-machine create -d virtualbox --virtualbox-disk-size "50000" --virtualbox-cpu-count "4" --virtualbox-memory "8092" docker2
 {% endhighlight %}
@@ -62,7 +63,7 @@ Se mais tarde, quando você abrir outra janela do terminal e o Docker avisar exi
 
 Para um pouco de divertimento rode:
 {% highlight sh %}
-$ docker run -it -rm kaggle/python python
+$ docker run -it kaggle/python python
 {% endhighlight %}
 
 Como você não tem a imagem "kaggle/python" no seu computador a primeira vez que rodar o esse comando o Docker irá baixar a imagem necessária.
@@ -142,6 +143,3 @@ Existem muitos tutoriais na internet sobre Docker que explicam em detalhes. Voc�
 Segue um aula de introdução ao básico do Docker:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0-AK020S1ak" frameborder="0" allowfullscreen></iframe>
-
-
-
