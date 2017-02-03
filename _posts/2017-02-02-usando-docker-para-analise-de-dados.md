@@ -138,7 +138,7 @@ kjupyter() {
 {% endhighlight %}
 
 
-Agora você pode usar kpython como substituto para chamada do python, ikpython invés de ipython, e run kjupyter para começar um Jupyter Notebook. Todos eles irão conter acesso imediato a coleção de bibliotecas para Data Science do Kaggle.
+Agora você pode usar kpython como substituto para chamada do python, ikpython invés de ipython, e kjupyter para começar um Jupyter Notebook. Todos eles irão conter acesso imediato a coleção de bibliotecas para Data Science do Kaggle.
 
 ----------------------------------
 Existem muitos tutoriais na internet sobre Docker que explicam em detalhes. Você pode começar dando uma olhada no canal do Rafael Gomes que vez um ótimo [video](https://www.youtube.com/watch?v=0-AK020S1ak) introdutório.
