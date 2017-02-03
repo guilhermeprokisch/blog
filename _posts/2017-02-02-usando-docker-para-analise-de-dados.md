@@ -59,7 +59,7 @@ $ eval $(docker-machine env docker2)
 
 Se mais tarde, quando você abrir outra janela do terminal e o Docker avisar exibir uma mensagem como "Cannot connect to the Docker daemon. Is the docker daemon running on this host?". Você precisará inicar a VM novamente rodando as duas linhas acima.
 
-## Mágica
+## Rodando o Primeiro Container.
 
 Para um pouco de divertimento rode:
 {% highlight sh %}
