@@ -109,13 +109,13 @@ Talvez essa parte essa a mais importante e complexa do Docker. O comando "docker
 
 Alguns para lembrar são:
 
-- v : (Volume). Conecta algum caminho da sua máquina local com uma pasta dentro do container. E então tudo que é escrito na pasta dentro do container será copiado para a pasta local e não será apagada depois do container ser removido.
+- -v : (Volume). Conecta algum caminho da sua máquina local com uma pasta dentro do container. E então tudo que é escrito na pasta dentro do container será copiado para a pasta local e não será apagada depois do container ser removido.
 
-- it : Roda e entra dentro do container de forma interativa.
+- -it : Roda e entra dentro do container de forma interativa.
 
-- p :  Conecta alguma porta local com uma porta dentro do container.
+- -p :  Conecta alguma porta local com uma porta dentro do container.
 
-- rm : Remove o container depois de sair.
+- -rm : Remove o container depois de sair.
 
 
 
