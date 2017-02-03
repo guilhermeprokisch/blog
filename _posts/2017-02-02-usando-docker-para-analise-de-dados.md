@@ -68,7 +68,7 @@ $ docker run -it kaggle/python python
 
 Como você não tem a imagem "kaggle/python" no seu computador a primeira vez que rodar o esse comando o Docker irá baixar a imagem necessária.
 
-Depois de terminar você provalmente estará dentro de um terminal do Python com todas as bibliotecas mais importantes para análise de dados.
+Depois de terminar você estará dentro de um terminal do Python com todas as bibliotecas mais importantes para análise de dados.
 
 Tente por exemplo importar essas bibliotecas.
 
@@ -93,7 +93,7 @@ Note que você deve ter a imagem "kaggle/python", ela foi baixada automaticament
 
 Você também pode pegar imagens com o comando "docker pull". Por exemplo, se você pode baixar também a imagem do R, "kaggle/rstats". 
 
-_Se quiser rode:_
+_Se quiser, rode:_
 
 {% highlight sh %}
 $ docker pull kaggle/rstats
@@ -115,14 +115,11 @@ Alguns para lembrar são:
 
 - -p :  Conecta alguma porta local com uma porta dentro do container.
 
-- -rm : Remove o container depois de sair.
-
-
-
 O comando -v existe por que um container _não armazena dados_. Ele é uma _"máquina virtual"_ que toda vez que iniciado volta ao estado inicial como descrito na imagem.
 
 
-Agora você já pode rodar tudo que quiser dentro dos containers. Aqui uma etapa extra que vai fazer ainda seu trabalho ficar fácil. Coloque essas linhas no seu .bashrc (ou no [equivalente do Windows)](https://superuser.com/questions/144347/is-there-windows-equivalent-of-the-bashrc-file-in-linux)
+Agora você já pode rodar tudo que quiser dentro dos containers. Aqui uma etapa extra que vai fazer 
+seu trabalho ficar ainda mais fácil. Coloque essas linhas no seu .bashrc (ou no [equivalente do Windows)](https://superuser.com/questions/144347/is-there-windows-equivalent-of-the-bashrc-file-in-linux)
 
 {% highlight sh %}
 kpython(){
